@@ -1,60 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+}
 .cont {
-    width: 290px;
-    height: 290px;
-    background: #eee;
-    border: solid 2px #aaaaaa;
+    width: 580px;
+    height: 580px;
+    background: rgb(216, 245, 212);
+    border: solid 2px #27b333;
     margin: 20px auto;
     border-radius: 10px;
     position: relative;
 }
 
 .back-slide {
-    width: 60px;
-    height: 60px;
-    background: pink;
+    width: 120px;
+    height:120px;
+    background: rgb(178, 238, 129);
     border-radius: 10px;
     position: absolute;
 }
 
 .fore-slide {
-    width: 60px;
-    height: 60px;
-    background: #f55;
+    width: 120px;
+    height: 120px;
+    background: rgb(29, 151, 49);
     border-radius: 10px;
     position: absolute;
-    color: #fff;
-    font-size: 40px;
+    color: rgb(143, 219, 133);
+    font-size: 60px;
     line-height: 60px;
-    text-align: center
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    transition: 2s;
+}
+.fore-slide:hover {
+    background-color: black;
+    color: white;
 }
 
 .mask {
     text-align: center;
-    width: 290px;
-    height: 290px;
+    width: 580px;
+    height: 580px;
     position: absolute;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, .3);
     z-index: 999;
+
     display: none;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
 
 .mask h1 {
     text-align: center;
+    margin-bottom: 5%;
+    font-size: 70px;
 }
 
 .mask .btn {
-    width: 100px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     border: 0;
-    margin-top: 20px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 30px;
+    margin-bottom: 5%;
+    background-color: rgb(30, 141, 63);
+    color: rgb(149, 236, 115);
+    transition: 1s;
+}
+
+.mask .btn:hover {
+    background-color: rgb(149, 236, 115);
+    color: rgb(30, 141, 63);
 }
 
 .mask p {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color: red;
 }
@@ -62,4 +92,6 @@
 .grade {
     margin: 20px auto;
     text-align: center;
+    font-size: 40px;
 }
+

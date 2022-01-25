@@ -97,7 +97,7 @@ function Slide(){
         // if flag == 0 --> game over
         if (flag == 0){
           this.over_grade.innerHTML = "score: " + this.grade;
-          this.mask.style.display = "block"; 
+          this.mask.style.display = "flex"; 
         }
       }
     },
@@ -289,8 +289,8 @@ function Slide(){
           var div = document.createElement("div");
           div.className = `back-slide back-slide-${i}-${j}`;
           this.cont.appendChild(div)
-          div.style.left = j * (60 + 10) + 10 + "px";
-          div.style.top = i * (60 + 10) + 10 + "px";
+          div.style.left = j * (120 + 20) + 20 + "px";
+          div.style.top = i * (120 + 20) + 20 + "px";
         }
       }
     },
@@ -324,8 +324,8 @@ function Slide(){
             if (this.pos[i][j] > 100) {
               div.style.fontSize = "35px";
             }
-            div.style.left = j * (60 + 10) + 10 + "px";
-            div.style.top = i * (60 + 10) + 10 + "px";
+            div.style.left = j * (120 + 20) + 20 + "px";
+            div.style.top = i * (120 + 20) + 20 + "px";
           }
         }
       }
