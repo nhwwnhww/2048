@@ -106,6 +106,12 @@ body {
     text-align: center;
     font-size: 40px;
     color: #FFEFBA;  /* fallback for old browsers */
-
 }
 
+#max_grade {
+    position: absolute;
+    font-size: 40px;
+    color: #FFEFBA;  /* fallback for old browsers */
+    top: 40%;
+    left: 10%;
+}

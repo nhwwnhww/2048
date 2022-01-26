@@ -1,3 +1,5 @@
+var max_grade = 0;
+var max_grade_id = document.getElementById("max_grade");
 // get all function
 function Slide(){
     // big box
@@ -40,6 +42,11 @@ function Slide(){
           case 40: this.downmove(); break;
         }
         this.g.innerHTML = "score: " + this.grade;
+
+        // Max grade
+        max_grade = Math.max(max_grade, this.grade);
+        max_grade_id.innerHTML = "Maxscore: " + max_grade;
+
         this.gameover();
       }.bind(this);
     },
@@ -97,7 +104,7 @@ function Slide(){
         // if flag == 0 --> game over
         if (flag == 0){
           this.over_grade.innerHTML = "score: " + this.grade;
-          this.mask.style.display = "flex"; 
+          this.mask.style.display = "flex";
         }
       }
     },
