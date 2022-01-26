@@ -3,11 +3,21 @@
     padding: 0;
     font-family: 'Anton', sans-serif;
 }
+
+body {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 .cont {
     width: 580px;
     height: 580px;
-    background: rgb(216, 245, 212);
-    border: solid 2px #27b333;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: solid 2px #d4f5d7;
     margin: 20px auto;
     border-radius: 10px;
     position: relative;
@@ -16,7 +26,9 @@
 .back-slide {
     width: 120px;
     height:120px;
-    background: rgb(178, 238, 129);
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     position: absolute;
 }
@@ -24,10 +36,8 @@
 .fore-slide {
     width: 120px;
     height: 120px;
-    background: rgb(29, 151, 49);
     border-radius: 10px;
     position: absolute;
-    color: rgb(143, 219, 133);
     font-size: 60px;
     line-height: 60px;
     text-align: center;
@@ -64,6 +74,7 @@
     text-align: center;
     margin-bottom: 5%;
     font-size: 70px;
+    color: #FFEFBA;
 }
 
 .mask .btn {
@@ -73,25 +84,28 @@
     border-radius: 10px;
     font-size: 30px;
     margin-bottom: 5%;
-    background-color: rgb(30, 141, 63);
-    color: rgb(149, 236, 115);
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
     transition: 1s;
 }
 
 .mask .btn:hover {
-    background-color: rgb(149, 236, 115);
-    color: rgb(30, 141, 63);
+    color: white;
 }
 
 .mask p {
     font-size: 40px;
     font-weight: bold;
-    color: red;
+    color: #FFEFBA;
 }
 
 .grade {
     margin: 20px auto;
     text-align: center;
     font-size: 40px;
+    color: #FFEFBA;  /* fallback for old browsers */
+
 }
 

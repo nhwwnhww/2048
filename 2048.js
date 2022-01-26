@@ -321,8 +321,41 @@ function Slide(){
             this.cont.appendChild(div);
             div.innerHTML = this.pos[i][j];
 
+            if (this.pos[i][j] == 2){
+              div.style.backgroundImage = "linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%)";
+            }
+            else if (this.pos[i][j] == 4){
+              div.style.backgroundImage = "linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%)";
+            }
+            else if (this.pos[i][j] == 8){
+              div.style.backgroundImage = "linear-gradient( 135deg, #FCCF31 10%, #F55555 100%)";
+            }
+            else if (this.pos[i][j] == 16){
+              div.style.backgroundImage = "linear-gradient( 135deg, #FFD26F 10%, #3677FF 100%)";
+            }
+            else if (this.pos[i][j] == 32){
+              div.style.backgroundImage = "linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%)";
+            }
+            else if (this.pos[i][j] == 64){
+              div.style.backgroundImage = "linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%)";
+            }
+            else if (this.pos[i][j] == 128){
+              div.style.backgroundImage = "linear-gradient( 135deg, #F0FF00 10%, #58CFFB 100%)";
+            }
+            else if (this.pos[i][j] == 256){
+              div.style.backgroundImage = "linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%)";
+            }
+            else if (this.pos[i][j] == 512){
+              div.style.backgroundImage = "linear-gradient( 135deg, #70F570 10%, #49C628 100%)";
+            }
+            else if (this.pos[i][j] == 1024){
+              div.style.backgroundImage = "linear-gradient( 135deg, #FF96F9 10%, #C32BAC 100%)";
+            }
+            else if (this.pos[i][j] == 2048){
+              div.style.backgroundImage = "linear-gradient( 135deg, #EECE13 10%, #B210FF 100%)";
+            }
             if (this.pos[i][j] > 100) {
-              div.style.fontSize = "35px";
+              div.style.fontSize = "45px";
             }
             div.style.left = j * (120 + 20) + 20 + "px";
             div.style.top = i * (120 + 20) + 20 + "px";
@@ -340,7 +373,7 @@ function Slide(){
             this.pos[i][j] = 0;
           }
         }
-        this.g.innerHTML = "score" + this.grade;
+        this.g.innerHTML = "score: " + this.grade;
         this.mask.style.display = "none";
         this.createFore();
         this.createFore();
